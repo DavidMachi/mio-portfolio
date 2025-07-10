@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <section id="bio">
+        <div class="bio-text text-animate">
+            <h1 style="font-size: 100px;">Benvenuti</h1>
+            <p>Mi chiamo David Machì sono uno sviluppatorre appassionato di front-end, specializzato nella creazione di
+                interfacce web moderne per siti dinamici e statici. Mi dedico inoltre con passione al mondo del 3D
+                realizzando diversi progetti interattivi. Il mio obiettivo è progettare
+                applicazioni pulite, responsive e intuitive, che uniscano estetica e usabilità.
+            </p>
+        </div>
+        <!-- <img class="astra" src="/img/astra2.png"> -->
+    </section>
+
+
+    <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z">
+        </path>
+    </svg>
+
+    <section id="projects">
+        <h2 style="text-align: center; font-size: 30px;">Il mio lavoro</h2>
+        <p style="text-align: center; font-size: 20px; ">Una collezione di alcuni progetti a cui ho lavorato.</p>
+        <div class="project-grid">
+            <div class="project text-animate">
+                <img class="projectimg" src="img/img2.png" alt="EJS Project"
+                    onclick="openModal('progetti/configuratoreDist') ">
+                <p id="description">Il progetto rappresenta una moderna interfaccia utente per un e-commerce
+                    specializzato nella vendita di sedie di design. L'intera struttura è stata realizzata in React.
+                    L'aspetto visivo è stato curato nei minimi dettagli grazie all'utilizzo di Tailwind CSS.
+                </p>
+            </div>
+
+            <div class="project text-animate">
+                <img class="projectimg" src="img/img1.png" alt="Vue Project"
+                    onclick="openModal('progetti/configuratoreMcLaren/index.html')">
+                <p id="description">Progetto di un configuratore 3D interattivo per una McLaren, sviluppato con Vue.js,
+                    Three.js e gestione dello stato tramite Pinia.
+                    L'obiettivo è offrire un'esperienza immersiva e personalizzabile all’utente,
+                    permettendo l'interazione diretta con il modello 3D del veicolo.</p>
+            </div>
+
+            <div class="project text-animate">
+                <img class="projectimg" src="img/img3.png" alt="HTML Project"
+                    onclick="openModal('progetti/esercizio_trivia/trivia.html')">
+                <p id="description">Progetto del classico gioco a quiz Trivia, sviluppato
+                    come pagina web statica utilizzando HTML, CSS e JavaScript puro. Nonostante la struttura statica,
+                    l'applicazione integra dinamicamente i contenuti grazie all’utilizzo di chiamate API, che permettono
+                    di ottenere domande aggiornate in tempo reale da fonti esterne.</p>
+            </div>
+
+            <div class="project project-center text-animate">
+                <img class="projectimg" src="img/img5.png" alt="HTML Project"
+                    onclick="openModal('progetti/casaDist/index.html')">
+                <p id="description">Questo progetto consiste nella realizzazione di una scena 3D,
+                    interamente sviluppata con Three.js, che ricrea una suggestiva e inquietante casa degli spettri
+                    immersa in un ambiente misterioso. L’obiettivo è
+                    combinare elementi grafici con funzionalità dinamiche per l’utente tramite un menu di
+                    Debug.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-100 0C-100 0 218.416 55.835 693.5 55.835C1168.58 55.835 1487 0 1487 0V79H-100V0Z" fill="#222"></path>
+    </svg>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="project-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.answerButton {
+    display: inline-block;  
+    margin: 10px;            
+    padding: 10px 20px;      
+    background-color: hsl(165, 11%, 93%); 
+    color: rgb(5, 3, 3);            
+    border: none;            
+    border-radius: 5px;      
+    cursor: pointer; 
+}
+
+
+#start{
+    padding: 10px 20px;    
+    display: flex;
+    justify-content: center;  
+    background-color: hsl(203, 61%, 35%); 
+    color: white;            
+    border: none;            
+    border-radius: 5px;      
+    cursor: pointer; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+        background-image: url('immagine/sfondofigo.jpg');
+        background-size: cover;
+        background-position: center; 
+        background-attachment: fixed;
+}
+
+
+#question {
+    color: white;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0px 0px 25px rgba(255, 255, 255, 0.6);
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0px 0px 25px rgba(255, 255, 255, 0.6);
+}
